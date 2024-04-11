@@ -600,6 +600,9 @@ async function sendHash() {
 	// await getFilebinInfo();
 	// await uploadFileToBin();
 	const CID = await uploadFileToIpfs();
+	// Qme59au89fjWEoq5asKKVrxJfNufFoLyq3m6p5JXjkoyLT
+	// try to switch to local IPFS client
+	console.log(CID);
 	await uploadFileToIpfs();
 	if (window.hashedfile.length > 4) {
 		await window.contract.methods
